@@ -33,6 +33,21 @@ function RenderLandingPage(props) {
 
       {/* Graphs Section: Add code here for the graphs section for your first ticket */}
       {/* <div className="graphs-section"> */}
+      <div className='graphs-section'>
+        <div className='graphs-section-ind'>
+          <img src={GrantRatesByOfficeImg} alt='Grant Rates By Office' className='imp-pics1' />
+          <p>Search Grant Rates By Office</p>
+        </div>
+        <div className='graphs-section-ind'>
+          <img src={GrantRatesByNationalityImg} alt='Grants By Nationality' className='imp-pics2' />
+          <p>Search Grants Rates By Nationality</p>
+        </div>
+        <div className='graphs-section-ind'>
+          <img src={GrantRatesOverTimeImg} alt='Grant Rates Over Time' className='imp-pics3' />
+          <p>Search Grants Rates Over Time</p>
+        </div>
+      </div>
+
       <div className="view-more-data-btn-container">
         <Button
           type="default"
@@ -40,6 +55,13 @@ function RenderLandingPage(props) {
           onClick={() => history.push('/graphs')}
         >
           View the Data
+        </Button>
+        <Button
+          type="default"
+          style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+
+        >
+          Download the  Data
         </Button>
       </div>
 
@@ -62,6 +84,39 @@ function RenderLandingPage(props) {
       <div>
         {/* Bottom Section: Add code here for the graphs section for your first ticket */}
         {/* <div className="bottom-section">*/}
+
+        <div className='"bottom-section'>
+          <div className='bottom-section-text'>
+            <h1 className='title-sys'>Systemic Disparity Insights</h1>
+            <div className='bottom-section-stats'>
+              <div className='bottom-stats'>
+                <h1 className='bottom-section-headers'> 36%</h1>
+                  <p>By the end of the Trump Administration, the average asylum office grant rate had fallen 36 percent
+                    from and average of 44 percent in fiscal year 2016 to 28 percent in fiscal year 2020
+                  </p>
+              </div>
+              <div className='bottom-stats'>
+                <h2 className='bottom-section-headers'> 5%</h2>
+                  <p>The New York asylum office grant rate dropped to 5 percent in fiscal year 2020.</p>
+              </div>
+              <div className='bottom-stats'>
+                <h3 className='bottom-section-headers'> 6x Lower</h3>
+                  <p>Between fiscal year 2017 and 2020, the New York asylum office's average grant rate was six time lower
+                    tham the San Francisco asylum office.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='bottom-read-more'>
+
+        <Button
+          type="default"
+          style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+        >
+          Read More
+        </Button>
+        </div>
         <p onClick={() => scrollToTop()} className="back-to-top">
           Back To Top ^
         </p>
