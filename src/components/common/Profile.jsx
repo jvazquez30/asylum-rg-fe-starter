@@ -15,12 +15,14 @@ const ProfilePage = () => {
         style={{
           margin: '0 auto',
           textAlign: 'center',
-          padding: '5% 0 5% 0',
+          padding: '10% 0 10% 0',
           height: '75vh',
         }}
       >
         <img src={user.picture} alt={user.name} />
-        <h2>Name: {user.name}</h2>
+        <h2 style={{
+          paddingTop: "5%" 
+        }}>Name: {user.name}</h2>
         <p>Email: {user.email}</p>
       </div>
     )
