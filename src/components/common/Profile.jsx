@@ -20,8 +20,8 @@ const ProfilePage = () => {
         }}
       >
         <img src={user.picture} alt={user.name} />
-        <h2>{user.name}</h2>
-        <p>{user.email}</p>
+        <h2>Name: {user.name}</h2>
+        <p>Email: {user.email}</p>
       </div>
     )
   );
